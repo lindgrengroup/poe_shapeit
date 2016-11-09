@@ -24,11 +24,11 @@ CHR=$SGE_TASK_ID
 
 source 0_config.sh
 
-$SHAPEIT --input-ped ${INPUT}.chr${CHR}.ped {INPUT}.chr${CHR}.map \
+$SHAPEIT --input-ped ${INPUT}.chr${CHR}.ped ${INPUT}.chr${CHR}.map \
         -M /well/lindgren/alexd/1000GP_Phase3/genetic_map_chr${CHR}_combined_b37.txt \
         --duohmm \
         -W 5 \
-        -O ${OUTPUT}/chr${CHR}
+        -O ${INPUT}.${CHR}
         #--exclude-snp /well/lindgren/alexd/HAPMAP/hapmap3_pop/hapmap3_r2_updateb37_fwd.MERGED.chr${CHR}.dupvar
         #--output-max  \
         #--output-graph /panfs/panasas01/sscm/xt610/TRIOS/IMPUTE/SHAPEIT/TRIO-graph
