@@ -59,7 +59,7 @@ sum(children%in% colnames(expression))
 sum(sample[children,4]%in% colnames(expression))
 sum(sample[children,5]%in% colnames(expression))
 
-children <- children[sample[children,4]%in% colnames(expression) & sample[children,5]%in% colnames(expression)]
+#children <- children[sample[children,4]%in% colnames(expression) & sample[children,5]%in% colnames(expression)]
 children
 
 
